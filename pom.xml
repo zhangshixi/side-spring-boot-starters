@@ -20,8 +20,6 @@
 
     <modules>
         <module>microservice-starter-dependencies</module>
-        <module>microservice-starter-datasource</module>
-        <module>microservice-starter-exception</module>
     </modules>
 
     <properties>
