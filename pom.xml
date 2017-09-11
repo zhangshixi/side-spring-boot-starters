@@ -19,6 +19,7 @@
     <description>Demo parent project for Spring Boot</description>
 
     <modules>
+        <module>microservice-starter-exception</module>
         <module>microservice-starter-dependencies</module>
     </modules>
 
@@ -34,17 +35,10 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>1.5.6.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
