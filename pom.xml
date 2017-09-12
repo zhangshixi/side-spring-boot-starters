@@ -19,8 +19,9 @@
     <description>Demo parent project for Spring Boot</description>
 
     <modules>
-        <module>microservice-starter-exception</module>
         <module>microservice-starter-dependencies</module>
+        <module>microservice-starter-exception</module>
+        <module>microservice-starter-validation</module>
     </modules>
 
     <properties>
