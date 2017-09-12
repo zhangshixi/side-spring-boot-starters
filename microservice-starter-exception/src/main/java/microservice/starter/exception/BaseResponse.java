@@ -9,21 +9,46 @@ import java.io.Serializable;
  *
  * @author Michael.Zhang
  */
-public class BaseResponse implements Serializable {
+public class BaseResponse<T> implements Serializable {
 
     private int responseCode;
     private String responseMessage;
+    private T responseBody;
 
     public BaseResponse() {
+    }
+
+    public BaseResponse(int responseCode) {
+        this.responseCode = responseCode;
     }
 
     public BaseResponse(String responseMessage) {
         this.responseMessage = responseMessage;
     }
 
+    public BaseResponse(T responseBody) {
+        this.responseBody = responseBody;
+    }
+
     public BaseResponse(int responseCode, String responseMessage) {
         this.responseCode = responseCode;
         this.responseMessage = responseMessage;
+    }
+
+    public BaseResponse(int responseCode, T responseBody) {
+        this.responseCode = responseCode;
+        this.responseBody = responseBody;
+    }
+
+    public BaseResponse(String responseMessage, T responseBody) {
+        this.responseMessage = responseMessage;
+        this.responseBody = responseBody;
+    }
+
+    public BaseResponse(int responseCode, String responseMessage, T responseBody) {
+        this.responseCode = responseCode;
+        this.responseMessage = responseMessage;
+        this.responseBody = responseBody;
     }
 
     public int getResponseCode() {
@@ -40,6 +65,14 @@ public class BaseResponse implements Serializable {
 
     public void setResponseMessage(String responseMessage) {
         this.responseMessage = responseMessage;
+    }
+
+    public T getResponseBody() {
+        return responseBody;
+    }
+
+    public void setResponseBody(T responseBody) {
+        this.responseBody = responseBody;
     }
 
 }

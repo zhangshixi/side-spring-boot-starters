@@ -2,10 +2,10 @@ package microservice.starter.exception.system;
 
 /**
  * Data missing exception.
- * 
+ * <p>
  * Created: 2017-09-10 22:46:05
  *
- * @author  Michael.Zhang
+ * @author Michael.Zhang
  */
 public class DataMissingException extends SystemException {
 
@@ -14,11 +14,11 @@ public class DataMissingException extends SystemException {
     }
 
     public DataMissingException(int responseCode, String responseMessage) {
-        super(responseCode, responseMessage);
+        this(responseCode, responseMessage, null);
     }
 
     public DataMissingException(int responseCode, Throwable cause) {
-        super(responseCode, cause);
+        this(responseCode, cause == null ? null : cause.getMessage(), cause);
     }
 
     public DataMissingException(int responseCode, String responseMessage, Throwable cause) {

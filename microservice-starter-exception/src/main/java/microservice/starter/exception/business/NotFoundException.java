@@ -17,7 +17,7 @@ public class NotFoundException extends BusinessException {
     public static final int RESPONSE_CODE = HttpServletResponse.SC_NOT_FOUND;
 
     public NotFoundException(String responseMessage) {
-        super(RESPONSE_CODE, responseMessage);
+        this(RESPONSE_CODE, responseMessage);
     }
 
     public NotFoundException(int responseCode, String responseMessage) {

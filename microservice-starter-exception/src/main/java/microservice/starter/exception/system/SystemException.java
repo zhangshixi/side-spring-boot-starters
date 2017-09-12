@@ -15,15 +15,15 @@ public class SystemException extends ErrorCodeException {
     public static final int RESPONSE_CODE = -1;
 
     public SystemException(String responseMessage) {
-        super(RESPONSE_CODE, responseMessage);
+        this(RESPONSE_CODE, responseMessage);
     }
 
     public SystemException(int responseCode, String responseMessage) {
-        super(responseCode, responseMessage);
+        this(responseCode, responseMessage, null);
     }
 
     public SystemException(int responseCode, Throwable cause) {
-        super(responseCode, cause);
+        this(responseCode, cause == null ? null : cause.getMessage(), cause);
     }
 
     public SystemException(int responseCode, String responseMessage, Throwable cause) {

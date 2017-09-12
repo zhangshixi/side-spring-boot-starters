@@ -1,11 +1,10 @@
 package microservice.starter.exception;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -15,14 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Configuration
 @ConditionalOnWebApplication
-@ConditionalOnClass(RequestMapping.class)
-@Import(ExceptionMvcGlobalHandler.class)
+@ConditionalOnClass({Controller.class, RequestMapping.class})
+@Import({GlobalExceptionHandlerAdvice.class, GlobalResponseBodyAdvice.class})
 public class ExceptionAutoConfiguration {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(ExceptionAutoConfiguration.class);
-
-    public ExceptionAutoConfiguration() {
-        LOGGER.info("Constructor initialize: {}", getClass());
-    }
 
 }

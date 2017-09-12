@@ -17,7 +17,7 @@ public class ParameterException extends BusinessException {
     public static final int RESPONSE_CODE = HttpServletResponse.SC_BAD_REQUEST;
 
     public ParameterException(String responseMessage) {
-        super(RESPONSE_CODE, responseMessage);
+        this(RESPONSE_CODE, responseMessage);
     }
 
     public ParameterException(int responseCode, String responseMessage) {

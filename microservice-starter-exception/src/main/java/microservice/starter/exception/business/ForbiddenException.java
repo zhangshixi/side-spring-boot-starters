@@ -17,7 +17,7 @@ public class ForbiddenException extends BusinessException {
     public static final int RESPONSE_CODE = HttpServletResponse.SC_FORBIDDEN;
 
     public ForbiddenException(String responseMessage) {
-        super(RESPONSE_CODE, responseMessage);
+        this(RESPONSE_CODE, responseMessage);
     }
 
     public ForbiddenException(int responseCode, String responseMessage) {
