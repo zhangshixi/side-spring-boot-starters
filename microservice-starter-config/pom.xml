@@ -10,10 +10,10 @@
         <version>1.1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>microservice-starter-exception</artifactId>
+    <artifactId>microservice-starter-config</artifactId>
     <packaging>jar</packaging>
-    <name>microservice-starter-exception</name>
-    <description>common exception of micro service starter</description>
+    <name>microservice-starter-config</name>
+    <description>config center of micro service starter</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -22,10 +22,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
