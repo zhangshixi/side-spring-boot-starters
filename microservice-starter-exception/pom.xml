@@ -23,6 +23,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.michael.microservice</groupId>
+            <artifactId>microservice-starter-common</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>

@@ -24,12 +24,17 @@
     <dependencies>
         <dependency>
             <groupId>com.michael.microservice</groupId>
-            <artifactId>microservice-starter-exception</artifactId>
+            <artifactId>microservice-starter-common</artifactId>
             <version>${parent.version}</version>
         </dependency>
         <dependency>
             <groupId>com.michael.microservice</groupId>
             <artifactId>microservice-starter-validation</artifactId>
+            <version>${parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.michael.microservice</groupId>
+            <artifactId>microservice-starter-exception</artifactId>
             <version>${parent.version}</version>
         </dependency>
     </dependencies>

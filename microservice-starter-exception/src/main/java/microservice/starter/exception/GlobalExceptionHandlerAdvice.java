@@ -1,5 +1,6 @@
 package microservice.starter.exception;
 
+import microservice.starter.common.resonse.BaseResponse;
 import microservice.starter.exception.business.BusinessException;
 import microservice.starter.exception.system.SystemException;
 import org.slf4j.Logger;

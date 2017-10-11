@@ -1,4 +1,4 @@
-package microservice.starter.exception;
+package microservice.starter.common.request;
 
 import java.io.Serializable;
 

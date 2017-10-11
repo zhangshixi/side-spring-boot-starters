@@ -1,4 +1,4 @@
-package microservice.starter.exception;
+package microservice.starter.common.resonse;
 
 import java.io.Serializable;
 
